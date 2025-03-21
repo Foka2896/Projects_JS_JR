@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Taller de Matematicas con JS</h1>
+        <p>Aprendiendo a usar JS con funciones Matematicas</p>
+        <rb></rb>
+        <h2>Aplica tu cupón aquí y confirma tu precio final de compra</h2>
+        <button type="button" class="btn btn-outline-warning" onclick="myFunction()">Aplica aquí!</button>
+        <p>Adquiere tu cupón</p>
+        <p id="cupon">CUPON:</p>
+        <p>Ingrese precio</p>
+        <input type="number" id="precio">
+        <br></br>
+        <button type="button" class="btn btn-outline-warning" onclick="total()">Total con descuento</button>
+        <p id="total">TOTAL:</p>
+        <rb></rb>
+    </div>
+    <script>
+        function myFunction() {
+            let cupon = Math.random() < 0.5 ? 20 :  50;
+            document.getElementById("cupon").innerHTML = ("CUPON:" + cupon.toFixed(0) + "%");
+        }
+        function total() {
+            let cuponTexto = document.getElementById("cupon").innerHTML;
+            let cupon = parseFloat(cuponTexto.replace("CUPON:", "").replace("%", "").trim());
+            let precio = parseFloat(document.getElementById("precio").value);
+            
+            if (isNaN(precio)) {
+                alert("Ingrese un valor numerico");
+                return;
+            } else {
+                let total = precio - (precio * cupon) / 100;
+                document.getElementById("total").innerHTML = ("TOTAL: " + "$" + total.toFixed(0));
+            }
+        }
+    </script>
+
+
+    <!--<script>
+        function totaldescuento() {
+            
+        }
+    </script>-->
+    <!--<a href="Math.js"></a>-->
+</body>
+<!--<script src="./Math.js"></script>-->
+
+</html>

@@ -1,0 +1,95 @@
+/* Fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #a8e6cf, #dcedc1);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    background: transparent linear-gradient(180deg, #ecfaff 0%, #d7afdf 100%) 0% 0% no-repeat padding-box;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin: auto;
+}
+
+/* Títulos */
+h1 {
+    color: #00796b;
+    font-weight: 600;
+}
+
+h2 {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Botones de cupones */
+button {
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Botones de descuento */
+.btn-cupon {
+    display: inline-block;
+    margin: 10px;
+    font-weight: 600;
+
+}
+
+.btn-primavera {
+    background: #ffeb3b;
+    color: #333;
+    border: 2px solid #ffcc00;
+}
+
+.btn-verano {
+    background: #ff6f61;
+    color: white;
+    border: 2px solid #d84315;
+}
+
+.btn-invierno {
+    background: #42a5f5;
+    color: white;
+    border: 2px solid #1976d2;
+}
+
+/* Efecto hover */
+button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* Campo de entrada */
+input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+}
+
+/* Estilos del resultado */
+#total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00796b;
+}
+
+#cupon {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}

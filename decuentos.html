@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupón Mania</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="styled.css">
+
+</head>
+
+<body>
+    <h1 class="h1">Cómo Calcular Precios con Descuento</h1>
+    <div class="ext1">
+        <div class="container">
+            <h1>Taller de Matematicas con JS</h1>
+            <p>Aprendiendo a usar JS con funciones Matematicas</p>
+            <rb></rb>
+            <h2>Aplica tu cupón aquí y confirma tu precio final de compra</h2>
+            <button type="button" class="btn btn-outline-warning" onclick="myFunction1()">¡¡Descuento de primavera,
+                aplica aquí 20%🌸!!</button>
+                <br></br>
+            <button type="button" class="btn btn-outline-danger" onclick="myFunction2()">¡¡Descuento de verano, aplica
+                aquí 40%🌞!!</button>
+                <br></br>
+            <button type="button" class="btn btn-outline-primary" onclick="myFunction3()">¡¡Descuento de invierno,
+                aplica
+                aquí 30%❄!!</button>
+                <br></br>   
+            <!--<p>Adquiere tu cupón</p>!-->
+            <p id="cupon">CUPON:</p>
+            <input type="number" id="precio" placeholder="Precio del producto">
+            <br></br>
+            <button type="button" class="btn btn-outline-warning" onclick="total()">Total con descuento</button>
+            <p id="total">TOTAL:</p>
+            <button type="button" class="btn btn-outline-danger" onclick="limpiar()">Resetear</button>
+            <rb></rb>
+        </div>
+    </div>
+    <script src="descuentos.js"></script>
+
+    <!--<script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-be3715c4-384f-4d50-b13b-903c76bad89a" data-elfsight-app-lazy></div>-->
+</body>
+
+</html>
